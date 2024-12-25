@@ -42,13 +42,11 @@ VALUES
 INSERT INTO Products (ProductID, ProductName)
 VALUES 
     (1, 'AwersomeProduct'),
-    (2, 'AwersomeProduct'),
-    (3, 'AwersomeProduct'),
-    (4, 'AwersomeProduct');
+    (2, 'AwersomeProduct');
+ 
 
 INSERT INTO ProductInventory (ProductID, WarehouseID, WarehouseAmount)
 VALUES 
     (1, 1, 2),
-    (1, 2, 5),
-    (2, 1, 4),
-    (2, 2, 7);
+    (2, 2, 5);
+
