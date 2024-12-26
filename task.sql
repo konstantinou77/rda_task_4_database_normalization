@@ -49,4 +49,3 @@ INSERT INTO ProductInventory (ProductID, WarehouseID, WarehouseAmount)
 VALUES 
     (1, 1, 2),
     (2, 2, 5);
-
