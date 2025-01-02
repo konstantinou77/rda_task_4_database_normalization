@@ -26,8 +26,8 @@ CREATE TABLE ProductInventory (
     WarehouseAmount INT,
     WarehouseID INT,
     ProductID INT,
-    PRIMARY KEY (ProductID, WarehouseID),
-    FOREIGN KEY (WarehouseID) REFERENCES Warehouses(WarehouseID) ON DELETE NO ACTION,
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+	FOREIGN KEY (WarehouseID) REFERENCES Warehouses(WarehouseID) ON DELETE NO ACTION,
     FOREIGN KEY (ProductID) REFERENCES Products(ProductID) ON DELETE NO ACTION
 );
 
@@ -41,8 +41,8 @@ VALUES
 
 INSERT INTO Products (ProductID, ProductName)
 VALUES 
-    (1, 'AwersomeProduct'),
-    (2, 'AwersomeProduct');
+    (1, 'AwesomeProduct'),
+    (2, 'AwesomeProduct');
  
 
 INSERT INTO ProductInventory (ProductID, WarehouseID, WarehouseAmount)
